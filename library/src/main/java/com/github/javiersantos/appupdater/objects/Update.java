@@ -7,7 +7,7 @@ public class Update {
     private Integer versionCode;
     private String releaseNotes;
     private URL apk;
-    private Integer lastMajorUpdateVersion;
+    private Integer lastMajorUpdateVersion = 0;
 
     public Update() {}
 
