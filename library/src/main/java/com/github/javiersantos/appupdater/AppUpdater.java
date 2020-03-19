@@ -353,11 +353,9 @@ public class AppUpdater implements IAppUpdater {
                                 if (update.getLastMajorUpdateVersion() >= appVersionCode) {
                                     alertDialog = UtilsDisplay.showMajorUpdateAvailableDialog(context, titleUpdate, getDescriptionUpdate(context, update, Display.DIALOG), btnUpdate, updateClickListener);
                                     alertDialog.setCancelable(false);
-                                    d(TAG, "Major Update");
                                 } else {
                                     alertDialog = UtilsDisplay.showUpdateAvailableDialog(context, titleUpdate, getDescriptionUpdate(context, update, Display.DIALOG), btnDismiss, btnUpdate, btnDisable, updateClickListener, btnDismissClickListener, disableClickListener);
                                     alertDialog.setCancelable(isDialogCancelable);
-                                    d(TAG, "Minor Update");
                                 }
                                 alertDialog.show();
                                 break;
